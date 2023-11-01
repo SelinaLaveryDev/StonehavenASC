@@ -1,8 +1,31 @@
 import React from "react";
 import "../App.css";
+import { SidebarData } from "./SidebarData";
 
 function Sidebar() {
-	return <div className="Sidebar">Sidebar</div>;
+	return (
+		<div className="Sidebar">
+			<ul className="SidebarList">
+				{SidebarData.map((val, key) => {
+					return (
+						<li
+							key={key}
+							className="row"
+							id={window.location.pathname === val.path ? "active" : ""}
+							onClick={() => {
+								window.location.pathname = val.path;
+							}}>
+							{" "}
+							<div id="icon">{val.icon}</div>{" "}
+							<div id="title">
+								<span>{val.title}</span>
+							</div>
+						</li>
+					);
+				})}
+			</ul>
+		</div>
+	);
 }
 
 export default Sidebar;
