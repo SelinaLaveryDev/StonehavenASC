@@ -8,24 +8,24 @@ export const SidebarData = [
 		title: "Home",
 		path: "/",
 		icon: <HomeIcon />,
-		cName: "nav-text",
+		cname: "home",
 	},
 	{
 		title: "About",
 		path: "/about",
 		icon: <PoolIcon />,
-		cName: "nav-text",
+		cname: "about",
 	},
 	{
 		title: "Events",
 		path: "/events",
 		icon: <EmojiEventsIcon />,
-		cName: "nav-text",
+		cname: "events",
 	},
 	{
 		title: "Contact",
 		path: "/contact",
 		icon: <EmailIcon />,
-		cName: "nav-text",
+		cname: "contact",
 	},
 ];

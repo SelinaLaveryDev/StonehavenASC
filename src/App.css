@@ -1,12 +1,14 @@
 .App {
   width: 100vw;
   height: 100vh;
-  font-family: 'Poppins', sans-serif;}
+  font-family: 'Poppins', sans-serif;
+}
 
 .Sidebar {
-  width: 250px;
-  height: 100%;
+  width: 319px;
+  height: 1024px;
   background-color: #57B5C8;
+  border: red 1px solid;
 }
 
 body {
@@ -15,14 +17,17 @@ body {
 }
 
 .SidebarList {
-  height: auto;
-  width: auto;
-  padding: 0;
+  width: 319px;
+  height: 50%;
+  flex-shrink: 0;
+    padding: 0;
+    background: #57B5C8;
+    border: 1px solid blue;
 }
 
 .SidebarList .row {
   height: 60px;
-  width: 100%;
+  width: 319px;
   list-style-type: none;
   margin: 0;
   display: flex;
@@ -30,11 +35,38 @@ body {
   justify-content: center;
   align-items: center;
   color: whitesmoke;
+  text-decoration: none; /* Add this to remove default link styles */
+  border: greenyellow 2px solid;
 }
 
-.row:hover {
+.SidebarList .row a { /* Style the Link component directly */
+  height: 60px;
+  width: 319px;
+  border: 1px solid palevioletred;
+
+  color: whitesmoke; /* Override default link color */
+  text-decoration: none; /* Remove underline from links */
+  display: flex;
+  align-items: center;
+justify-content: center;
+flex-shrink: 0;
+color: #FFF;
+font-family: 'Russo One', sans-serif;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.SidebarList .row:hover {
   background-color: #3F8EA5;
   cursor: pointer;
+}
+
+.SidebarList #active {
+  background-color: #3F8EA5;
+
 }
 
 .row #icon {
