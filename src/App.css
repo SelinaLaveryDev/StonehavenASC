@@ -1,20 +1,24 @@
+body {
+  width: 1920px;
+  height: 960px;
+  margin: 0;
+  padding: 0;
+}
+
+
 .App {
-  width: 100vw;
+  display: flex;
+  width: 1920px;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
 
 .Sidebar {
-  width: 319px;
-  height: 1024px;
+  width: 300px;
+  height: 100%;
   background-color: #57B5C8;
-  border: red 1px solid;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
 
 .SidebarList {
   width: 319px;
@@ -22,7 +26,6 @@ body {
   flex-shrink: 0;
     padding: 0;
     background: #57B5C8;
-    border: 1px solid blue;
 }
 
 .SidebarList .row {
@@ -36,13 +39,11 @@ body {
   align-items: center;
   color: whitesmoke;
   text-decoration: none; /* Add this to remove default link styles */
-  border: greenyellow 2px solid;
 }
 
 .SidebarList .row a { /* Style the Link component directly */
   height: 60px;
   width: 319px;
-  border: 1px solid palevioletred;
 
   color: whitesmoke; /* Override default link color */
   text-decoration: none; /* Remove underline from links */
@@ -50,7 +51,6 @@ body {
   align-items: center;
 justify-content: center;
 flex-shrink: 0;
-color: #FFF;
 font-family: 'Russo One', sans-serif;
 
 font-size: 16px;
@@ -64,7 +64,7 @@ line-height: normal;
   cursor: pointer;
 }
 
-.SidebarList #active {
+.SidebarList .row a.active {
   background-color: #3F8EA5;
 
 }
@@ -73,8 +73,17 @@ line-height: normal;
   flex: 30%;
   display: grid;
   place-items: center;
-}
+padding: 0 30px;}
 
 .row #title {
   flex: 70%;
 }
+
+.content {
+  flex-grow: 1; /* takes remaining space */
+  width: 1505px;
+  height: 967px; /* adjust to full height of parent */
+  background-color: lightblue;
+  margin: 0 auto;
+}
+

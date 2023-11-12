@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 import { SidebarData } from "./SidebarData";
 import SASC_logo1 from "../Assets/SASC_logo1 - Edited 1.png";
@@ -19,16 +19,15 @@ function Sidebar() {
 						<li
 							key={key}
 							className="row">
-							<Link
+							<NavLink
 								to={val.path}
-								className={
-									window.location.pathname === val.path ? "active" : ""
-								}>
+								activeClassName="active"
+								className={({ isActive }) => (isActive ? "active" : "")}>
 								<div id="icon">{val.icon}</div>
 								<div id="title">
 									<span>{val.title}</span>
 								</div>
-							</Link>
+							</NavLink>
 						</li>
 					);
 				})}
