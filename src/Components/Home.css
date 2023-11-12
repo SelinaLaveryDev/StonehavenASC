@@ -1,8 +1,37 @@
 .home-container {
-  margin: 0px 20%;
+  
+  margin: 0 2%;
   width: 1600px;
   height: 638px;
-  background-color: lightblue;
+}
+
+.welcome-banner {
+  position: relative;
+  width: 1559px;
+  height: 500px;
+}
+
+.sasc-title {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.front-crawl {
+  position: absolute;
+  top: 13%;
+  left: 60%;
+}
+
+.welcome-section img{
+  margin: 1% 20%;
+}
+
+.welcome-section p {
+  margin: 0 10%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .photo-container {

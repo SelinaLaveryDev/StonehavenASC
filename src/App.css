@@ -1,27 +1,28 @@
 body {
-  width: 1920px;
-  height: 960px;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: white;
+  overflow: scroll;
 }
 
 
 .App {
   display: flex;
   width: 1920px;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
 
 .Sidebar {
   width: 300px;
-  height: 100%;
+  min-height: 100vh;
   background-color: #57B5C8;
 }
 
 
 .SidebarList {
-  width: 319px;
   height: 50%;
   flex-shrink: 0;
     padding: 0;
@@ -30,7 +31,6 @@ body {
 
 .SidebarList .row {
   height: 60px;
-  width: 319px;
   list-style-type: none;
   margin: 0;
   display: flex;
@@ -43,7 +43,7 @@ body {
 
 .SidebarList .row a { /* Style the Link component directly */
   height: 60px;
-  width: 319px;
+  width: 300px;
 
   color: whitesmoke; /* Override default link color */
   text-decoration: none; /* Remove underline from links */
@@ -73,7 +73,8 @@ line-height: normal;
   flex: 30%;
   display: grid;
   place-items: center;
-padding: 0 30px;}
+padding: 0 30px;
+}
 
 .row #title {
   flex: 70%;
@@ -83,7 +84,6 @@ padding: 0 30px;}
   flex-grow: 1; /* takes remaining space */
   width: 1505px;
   height: 967px; /* adjust to full height of parent */
-  background-color: lightblue;
   margin: 0 auto;
 }
 
