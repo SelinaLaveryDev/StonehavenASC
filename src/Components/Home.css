@@ -25,9 +25,9 @@ display: flex;
 }
 
 .sasc-title {
-  width: 700px;
-  height: 200px;
-  margin:  100px 50px;
+  width: 512px;
+  height: 243px;
+  margin:  100px 20px;
 flex-shrink: 0;
 background: url('../Assets/SASCfullTitle.png');
 background-repeat: no-repeat;

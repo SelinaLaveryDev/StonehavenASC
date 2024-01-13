@@ -23,6 +23,18 @@ export const SidebarData = [
 		cname: "events",
 	},
 	{
+		title: "Committee",
+		path: "/committee",
+		icon: <EmojiEventsIcon />,
+		cname: "committee",
+	},
+	{
+		title: "Documents",
+		path: "/documents",
+		icon: <EmojiEventsIcon />,
+		cname: "documents",
+	},
+	{
 		title: "Contact",
 		path: "/contact",
 		icon: <EmailIcon />,

@@ -14,6 +14,10 @@ const Contact = () => {
   };
 
   return (
+    <>
+    <header className='header-block'>
+    </header>
+
     <div className="contact-container">
       <h2>Got a question? Feel free to contact us below.</h2>
       <form onSubmit={handleSubmit}>
@@ -43,6 +47,7 @@ const Contact = () => {
         <button type="submit">Submit</button>
       </form>
     </div>
+    </>
   );
 };
 

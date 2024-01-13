@@ -1,8 +1,63 @@
 .about-container {
-  width: 100vw;
-  height: 638px;
-  flex-shrink: 0;  
   display: flex;
-  flex-direction: column;  
-  background-color: #57B5C8;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.about-column {
+  background: #f9f9f9; /* Light grey background */
+  border-radius: 8px; /* Rounds the corners of the columns */
+  flex-basis: 45%; /* Takes up roughly half the container width */
+  margin: 10px;
+  padding: 20px;
+}
+
+.about-column h2, .about-column h3 {
+  color: #333; /* Dark text for headings */
+  margin-bottom: 0.5em;
+}
+
+.about-column p, .about-column ul {
+  color: #555; /* Slightly lighter text for body */
+  line-height:1.6; /* Spacing for readability */
+margin-bottom: 1em;
+}
+
+.about-column ul {
+list-style-type: none; /* No bullets for a cleaner look /
+padding-left: 0; / Aligns text with the rest of the content */
+}
+
+.about-column li {
+margin-bottom: 0.5em;
+padding-left: 1.5em;
+position: relative;
+}
+
+.about-column li::before {
+content: '•'; /* Adds a custom bullet /
+color: #007bff; / Bullet color */
+font-size: large;
+position: absolute;
+left: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.membership-column {
+flex-basis: 100%; /* Each column takes full width on smaller screens */
+}
+}
+
+
+
+/* Add additional styles for buttons, links, and other elements as needed. */
+
+.header-block {
+  background-color: #E63827;
+  width: 100%;
+  height: 200px;
 }

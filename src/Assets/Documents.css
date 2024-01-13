@@ -1,0 +1,33 @@
+.documents-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .documents-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .documents-container p {
+    margin-bottom: 30px;
+    color: #777; /* Adjust the color as needed */
+  }
+  
+  .policies-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .policy-link {
+    color: #0044cc; /* Adjust link color as needed */
+    text-decoration: none; /* Removes underline from links */
+    margin-bottom: 10px; /* Spacing between links */
+    font-size: 18px; /* Adjust font size as needed */
+    transition: color 0.3s ease;
+  }
+  
+  .policy-link:hover {
+    color: #002288; /* Adjust hover color as needed */
+    text-decoration: underline; /* Adds underline on hover */
+  }
+  
