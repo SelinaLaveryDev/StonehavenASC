@@ -1,0 +1,47 @@
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-container input,
+  .contact-container textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+  }
+  
+  .contact-container button {
+    padding: 10px;
+    background-color: #57B5C8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-container button:hover {
+    background-color: #3F8EA5;
+  }
+
+  .contact-container input:focus,
+.contact-container textarea:focus {
+  outline: none; /* Removes the default outline */
+  border-color: #57B5C8; /* Sets the border color to a blue shade */
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5); /* Optional: Adds a glow effect */
+}
+
+  
