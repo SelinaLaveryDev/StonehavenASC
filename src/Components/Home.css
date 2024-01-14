@@ -6,12 +6,12 @@
 }
 
 .welcome-banner {
-  width: 1500px;
+  width: 100%;
 height: fit content;
 flex-shrink: 0;
-border-radius: 50px;
 background: #E63827;
 display: flex;
+box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .flex-container {
@@ -36,11 +36,6 @@ background-position: center center;
 
 }
 
-.front-crawl {
-  position: absolute;
-  top: 10%;
-  left: 60%;
-}
 
 .welcome-section img{
   margin: 1% 20%;

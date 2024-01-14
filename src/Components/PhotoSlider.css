@@ -1,5 +1,19 @@
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+  }
+
+  .arrow-photo-arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 1000px;
+  }
+
 .photos {
-    width: 900px;
+    width: 1000px;
     min-height: 300px;
     flex-shrink: 0;
     border-radius: 30px;
@@ -8,6 +22,8 @@
     overflow-y: scroll;
     display: flex;
     margin-right: 20px;
+    overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Optional: Enables snap scrolling for each tile */
   }
 
   .slider {
@@ -15,13 +31,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-self: center;
-  
+    margin-top: 50px;
+    margin-bottom: 40px;
   }
   
 
   .tile {
     display: flex;
-  min-width: 600px;
+  width: 600px;
   height: 300px;
   padding: 12px 16px;
   flex-direction: column;
@@ -35,4 +52,45 @@
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.10), -4px -4px 10px 0px rgba(0, 0, 0, 0.10);
   }
   
+  /* Add your existing styles here */
+
+.slider-controls {
+    text-align: center;
+  }
+  
+  .slider-arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    width: 10px;
+  }
+  
+  .slider-arrow.left {
+  }
+  
+  .slider-arrow.right {
+
+  }
+  
+  .slider-dots {
+    text-align: center;
+    padding-top: 0px;
+  }
+  
+  .slider-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+    .slider-dot.active {
+    background-color: #333;
+    }
+    
   

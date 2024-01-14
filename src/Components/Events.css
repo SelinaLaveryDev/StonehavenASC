@@ -1,0 +1,44 @@
+.events-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .events-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .event-card {
+    background: #f9f9f9; /* Light grey background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 80%; /* Adjust width as necessary */
+    max-width: 500px; /* Adjust maximum width as necessary */
+  }
+  
+  .event-title {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .event-date {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .event-description {
+    color: #666;
+  }
+  
+  .no-events-message {
+    font-style: italic;
+    color: #777;
+  }
+  

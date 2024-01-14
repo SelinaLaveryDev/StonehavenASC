@@ -1,5 +1,5 @@
 import React from 'react';
-import './Documents.css'; // Make sure to create a Documents.css file for styling
+import '../Components/Documents.css'; // Make sure to create a Documents.css file for styling
 
 const Documents = () => {
   const policies = [
@@ -9,8 +9,8 @@ const Documents = () => {
     { name: 'Disciplinary Policy' },
     { name: 'Photography Policy' },
     { name: 'Privacy Policy' },
-    { name: 'Swim England Data Protection Notice' },
-    { name: 'NST Data Protection Policy' },
+    { name: 'Data Protection Notice' },
+    { name: 'SASC Data Protection Policy' },
     { name: 'Poolside Assistant / Trainee Coach Policy' }
   ];
 

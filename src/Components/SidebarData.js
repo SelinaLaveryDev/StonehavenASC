@@ -2,6 +2,8 @@ import HomeIcon from "@mui/icons-material/Home";
 import PoolIcon from "@mui/icons-material/Pool";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import EmailIcon from "@mui/icons-material/Email";
+import ArticleIcon from '@mui/icons-material/Article';
+import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 
 export const SidebarData = [
 	{
@@ -25,13 +27,13 @@ export const SidebarData = [
 	{
 		title: "Committee",
 		path: "/committee",
-		icon: <EmojiEventsIcon />,
+		icon: <PeopleOutlineIcon />,
 		cname: "committee",
 	},
 	{
 		title: "Documents",
 		path: "/documents",
-		icon: <EmojiEventsIcon />,
+		icon: <ArticleIcon />,
 		cname: "documents",
 	},
 	{

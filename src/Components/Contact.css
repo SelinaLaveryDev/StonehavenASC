@@ -18,8 +18,9 @@
   .contact-container textarea {
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 
   }
   
@@ -37,15 +38,22 @@
     background-color: #3F8EA5;
   }
 
+  textarea {
+    font-family: Arial, Helvetica, sans-serif
+  }
+
   .contact-container input:focus,
 .contact-container textarea:focus {
   outline: none; /* Removes the default outline */
   border-color: #57B5C8; /* Sets the border color to a blue shade */
   box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5); /* Optional: Adds a glow effect */
 }
+// e63727e6
 
     .header-block {
         background-color: #E63827;
         width: 100%;
         height: 200px;
+        box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
+
     }

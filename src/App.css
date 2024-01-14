@@ -16,10 +16,17 @@ body {
 }
 
 .Sidebar {
-  width: 300px;
+  width: 350px;
   min-height: 100vh;
   background-color: #57B5C8;
+
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Adjust this value as needed, depending on your header height or desired spacing from the top */
+  height: 100vh; /* You might not need this depending on your design */
+  overflow-y: auto; /* To make the content scrollable if it exceeds the viewport height */
 }
+
 
 
 .SidebarList {

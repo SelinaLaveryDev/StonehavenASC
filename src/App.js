@@ -7,7 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Contact from "./Components/Contact";
 import Committee from "./Components/Committee";
-import Documents from "./Assets/Documents";
+import Documents from "./Components/Documents";
+import Events from "./Components/Events";
 
 export default function App() {
 	return (
@@ -25,6 +26,11 @@ export default function App() {
 							path="/about"
 							element={<About />}
 						/>
+						<Route
+							path="/events"
+							element={<Events />}
+						/>
+
 						<Route
 							path="/committee"
 							element={<Committee />}
