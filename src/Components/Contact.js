@@ -28,12 +28,6 @@ const Contact = () => {
           onChange={(e) => setName(e.target.value)}
         />
         <input
-          type="text"
-          placeholder="Enter Swimmer Name"
-          value={swimmerName}
-          onChange={(e) => setSwimmerName(e.target.value)}
-        />
-        <input
           type="email"
           placeholder="Email"
           value={email}
