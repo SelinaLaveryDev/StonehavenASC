@@ -7,12 +7,31 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would handle the submission, for example sending data to a server
-    console.log(name, swimmerName, email, message);
+  
+    try {
+      const response = await fetch('http://localhost:3001/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+  
+      if (response.ok) {
+        console.log('Email sent successfully');
+        // Reset form or give user feedback
+      } else {
+        console.error('Failed to send email');
+        // Handle errors or give user feedback
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      // Handle errors or give user feedback
+    }
   };
-
+  
   return (
     <>
     <header className='header-block'>
