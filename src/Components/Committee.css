@@ -1,58 +1,58 @@
 
 
 .committee-container {
-  text-align: center;
-  padding: 40px;
-  margin: 0 300px;
-}
-
-.committee-container h2 {
-  margin-bottom: 30px;
-}
-
-.committee-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 100px;
-  justify-content: center;
-  align-items: center;
-}
-
-.committee-card {
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: inset 4px 0
-  8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease;
+    text-align: center;
+    padding: 40px;
+    margin: 0 300px;
   }
   
-  .committee-card:hover {
-  transform: translateY(-5px);
+  .committee-container h2 {
+    margin-bottom: 30px;
   }
   
-  .committee-image {
-  width: 100px; 
-  height: 100px; 
-  border-radius: 50%;
-  background-color: #d0e2f2; 
-  margin-bottom: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  .committee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
   }
   
-  .committee-info {
-  margin-top: 10px;
-  }
-  
-  .committee-name {
-  font-size: 1.1em;
-  margin-bottom: 5px;
-  }
-  
-  .committee-role {
-  font-size: 0.9em;
-  color: #707070;
-  }
+  .committee-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 4px 0
+    8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    }
+    
+    .committee-card:hover {
+    transform: translateY(-5px);
+    }
+    
+    .committee-image {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    background-color: #d0e2f2; 
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .committee-info {
+    margin-top: 10px;
+    }
+    
+    .committee-name {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    }
+    
+    .committee-role {
+    font-size: 0.9em;
+    color: #707070;
+    }

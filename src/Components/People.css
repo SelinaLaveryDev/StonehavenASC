@@ -1,0 +1,76 @@
+.coaching-page {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  align-items: center;
+}
+
+.coaching-team, .head-coach-welcome {
+  margin-bottom: 20px;
+  background: #f9f9f9; /* Light grey background */
+  padding: 20px 40px;
+  border-radius: 8px;
+  width: fit-content;
+
+
+}
+
+.coaching-chart, .coaching-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.coaching-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.coaching-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.head-coach-welcome p, .head-coach-welcome h2 {
+  margin-top: 10px;
+}
+
+.committees-section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.committees-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.committee, .exec-committee {
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 10px;
+  margin: 5px;
+  flex: 1;
+}
+
+.committee ul, .exec-committee ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+}
+
+.committee li, .exec-committee li {
+  padding: 2px 0; /* Adds vertical spacing between items */
+}
+
+.people-chart {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .coaching-chart, .coaching-list, .committees-container {
+    flex-direction: column;
+  }
+}

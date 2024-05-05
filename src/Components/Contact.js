@@ -1,65 +1,58 @@
-import React, { useState } from 'react';
-import './Contact.css'; // Make sure to create a Contact.css file for styling
+import React, { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
+import './Contact.css'; // Your existing CSS
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [swimmerName, setSwimmerName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const form = useRef();
+  const [buttonText, setButtonText] = useState('Submit');
+  const [buttonColor, setButtonColor] = useState('#00BFFF'); // or any default color you prefer
 
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-  
-    try {
-      const response = await fetch('http://localhost:3001/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, message }),
+    setButtonText('Sending...');
+
+    emailjs.sendForm('service_or3n458', 'template_mqz0i1r', form.current, 'aq6obCjDFMCjHRdT4')
+      .then((result) => {
+          console.log(result.text);
+          // Clear the form fields
+          form.current.reset();
+          alert('Email sent successfully!');
+      }, (error) => {
+          console.log(error.text);
+          // Optionally reset form here if desired
+          alert('Failed to send email. Please try again later.');
       });
-  
-      if (response.ok) {
-        console.log('Email sent successfully');
-        // Reset form or give user feedback
-      } else {
-        console.error('Failed to send email');
-        // Handle errors or give user feedback
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      // Handle errors or give user feedback
-    }
   };
-  
+
   return (
     <>
-    <header className='header-block'>
-    </header>
-
-    <div className="contact-container">
-      <h2>Got a question? Feel free to contact us below.</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Enter your Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <textarea
-          placeholder="Enter your message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      <header className='header-block'></header>
+      <div className="contact-container">
+        <h2>Got a question? Feel free to contact us below.</h2>
+        <form ref={form} onSubmit={sendEmail}>
+          <input
+            type="text"
+            name="from_name"
+            placeholder="Enter your Name"
+          />
+          <input
+            type="email"
+            name="from_email"
+            placeholder="Your Email"
+          />
+          <textarea
+            name="message"
+            placeholder="Enter your message"
+          ></textarea>
+          <button
+            id="signinButton"
+            type="submit"
+            style={{ backgroundColor: buttonColor, color: 'white' }}
+          >
+            {buttonText}
+          </button>
+        </form>
+      </div>
     </>
   );
 };

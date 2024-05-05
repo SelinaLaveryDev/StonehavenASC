@@ -4,27 +4,27 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 
 .App {
   display: flex;
-  width: 1920px;
+  flex-direction: column;
+  width: 100vw;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
 
 .Sidebar {
-  width: 350px;
-  min-height: 100vh;
-  background-color: #57B5C8;
+  width: 300px;
+  min-height: 100%;
+  background-color: #01B0F1;
 
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
+  position: fixed;
   top: 0; /* Adjust this value as needed, depending on your header height or desired spacing from the top */
-  height: 100vh; /* You might not need this depending on your design */
-  overflow-y: auto; /* To make the content scrollable if it exceeds the viewport height */
+  overflow-y: hidden; /* To make the content scrollable if it exceeds the viewport height */
 }
 
 
@@ -33,7 +33,7 @@ body {
   height: 50%;
   flex-shrink: 0;
     padding: 0;
-    background: #57B5C8;
+    background: #01B0F1;
 }
 
 .SidebarList .row {
@@ -67,12 +67,12 @@ line-height: normal;
 }
 
 .SidebarList .row:hover {
-  background-color: #3F8EA5;
+  background-color: #0089bb;
   cursor: pointer;
 }
 
 .SidebarList .row a.active {
-  background-color: #3F8EA5;
+  background-color: #0089bb;
 
 }
 
@@ -89,8 +89,7 @@ padding: 0 30px;
 
 .content {
   flex-grow: 1; /* takes remaining space */
-  width: 100%;
   height: 100%; /* adjust to full height of parent */
-  margin: 0 auto;
+  margin-left: 300px; /* Adjust margin to account for sidebar width */
 }
 
