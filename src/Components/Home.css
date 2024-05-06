@@ -61,12 +61,12 @@ box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
   align-items: center;
   width: 100%;
   height: 100%;
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 
 @media (max-width: 1400px) {
-  .sasc-title {
-    display: none;
+  .sasc-title img {
+    width: 300px;
   }
 
   .welcome-section h1 {
@@ -79,6 +79,9 @@ box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
 
 }
 @media (max-width: 1200px) {
+  .sasc-title {
+display: none;  }
+
   .welcome-section h1 {
     font-size: 1.2em;
   }
@@ -90,3 +93,29 @@ box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
     overflow-x: hidden;
   }
 }
+
+@media (max-width: 700px) {
+  
+
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sasc-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sasc-title img {
+    margin: 20px 0;
+    width: 200px;
+  }
+}
+
+
+

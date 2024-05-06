@@ -11,8 +11,8 @@ export default function Home() {
 				<div className="flex-container">
 					<div
 						className="sasc-title">
-						<img src={title} />
-					</div>
+      					<img src={title} alt="Welcome to Stonehaven Amateur Swimming Club" width={400}/>
+						</div>
 					<PhotoSlider />
 				</div>
 			</div>

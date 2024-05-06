@@ -98,6 +98,16 @@
     }
 
 /* Responsive adjustments */
+@media (max-width: 1200px) {
+  .tile {
+    width: 60%; /* Make tile slightly smaller */
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+}
+
+
 @media (max-width: 768px) {
   .arrow-photo-arrow {
     width: 50%;
@@ -123,18 +133,11 @@
   }
 }
 
-@media (max-width: 480px) {
-  .photos {
-    max-width: 100%; /* Allow full width on very small screens */
+@media (max-width: 700px) {
+  .arrow-photo-arrow, .slider-dot {
+    display: none;
   }
 
-  .tile img {
-    object-fit: contain; /* Changes to contain on smaller screens to ensure no cropping */
-  }
-
-  .tile {
-    margin: 0 5px;
-  }
-}    
+}
     
   
