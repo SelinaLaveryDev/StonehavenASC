@@ -8,11 +8,13 @@ const Footer = () => {
     return (
         <footer>
            < div className="footer-container">
-           <img src={sasLogo} alt="Welcome to Stonehaven Amateur Swimming Club" width={200}/>	
+           <img src={sasLogo} alt="Welcome to Stonehaven Amateur Swimming Club" height={50}/>	
+            <img src={scotSwim} alt="Welcome to Stonehaven Amateur Swimming Club" height={50}/>
+            <img src={northLogo} alt="Welcome to Stonehaven Amateur Swimming Club" height={60}/>
+            </div>
+            < div className="footer-container">
 
             <p>&copy; 2024 Stonehaven Amateur Swimming Club</p>
-            <img src={scotSwim} alt="Welcome to Stonehaven Amateur Swimming Club" width={150}/>
-            <img src={northLogo} alt="Welcome to Stonehaven Amateur Swimming Club" width={100}/>
             </div>
         </footer>
     );

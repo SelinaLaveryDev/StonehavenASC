@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -15,10 +15,11 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 
 .Sidebar {
-  width: 300px;
+  width: 250px;
   min-height: 100%;
   background-color: #01B0F1;
 
@@ -50,7 +51,7 @@ body {
 
 .SidebarList .row a { /* Style the Link component directly */
   height: 60px;
-  width: 300px;
+  width: 100%;
 
   color: whitesmoke; /* Override default link color */
   text-decoration: none; /* Remove underline from links */
@@ -90,6 +91,31 @@ padding: 0 30px;
 .content {
   flex-grow: 1; /* takes remaining space */
   height: 100%; /* adjust to full height of parent */
-  margin-left: 300px; /* Adjust margin to account for sidebar width */
+  margin-left: 250px; /* Adjust margin to account for sidebar width */
 }
 
+@media (max-width: 900px) {
+  .body {
+    overflow-y: scroll;
+  overflow-x: scroll;
+  }
+  .Sidebar {
+    position: relative; /* Remove fixed positioning */
+    display: none; /* Hide sidebar */
+  }
+
+  .small-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #01B0F1;
+    color: whitesmoke;
+  }
+
+  .content {
+    margin-left: 0; /* Adjust margin to new sidebar width */
+  }
+}

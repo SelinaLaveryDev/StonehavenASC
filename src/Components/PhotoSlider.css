@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Center children horizontally */
+    width: 50%;
+    /* margin-left: 10px; */
+    margin: 0 auto; /* Center the slider on the page */
   }
 
   .arrow-photo-arrow {
@@ -9,13 +12,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    width: 1000px;
+    width: 100%;
   }
 
 .photos {
-    width: 1000px;
-    min-height: 300px;
-    flex-shrink: 0;
+    width: 70%;
+    min-width: 550px;
+    max-width: 600px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */    flex-shrink: 0;
     border-radius: 30px;
     margin: 0px;
     scroll-behavior: smooth;
@@ -31,28 +35,33 @@
     flex-direction: row;
     justify-content: space-between;
     align-self: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-  }
+    width: 100%;
+    margin: 20px 0;  }
   
 
-  .tile {
-    display: flex;
-  width: 600px;
-  height: 300px;
-  padding: 12px 16px;
-  flex-direction: column;
-  justify-content: center; /*centers the content inside the tile */
-  align-items: center;
-  border-radius: 30px;
-  background: #FFF;
-  margin: 10px;
-  
-  /* Modes Tiles */
-  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.10), -4px -4px 10px 0px rgba(0, 0, 0, 0.10);
+    .tile {
+      flex: 0 0 auto; /* Do not grow, do not shrink, base size on content */
+      width: calc(95% - 50px); /* Subtract padding/margin */
+      padding: 10px;
+      margin: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40px;
+      background-color: aliceblue;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    }  
+  /* Add your existing styles here */
+
+  .tile img {
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: auto; /* Keeps the aspect ratio intact */
+    object-fit: cover; /* Covers the area, might crop the image */
+    border-radius: 15px; /* Matches the container's border-radius */
+    display: block; /* Removes bottom space/gap under the image */
   }
   
-  /* Add your existing styles here */
 
 .slider-controls {
     text-align: center;
@@ -61,16 +70,11 @@
   .slider-arrow {
     background: none;
     border: none;
-    font-size: 24px;
     cursor: pointer;
-    width: 10px;
   }
   
-  .slider-arrow.left {
-  }
-  
-  .slider-arrow.right {
-
+  .slider-arrow:hover {
+    color: #333;
   }
   
   .slider-dots {
@@ -92,5 +96,45 @@
     .slider-dot.active {
     background-color: #333;
     }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .arrow-photo-arrow {
+    width: 50%;
+  }
+
+  .tile img {
+    object-fit: contain; /* Changes to contain on smaller screens to ensure no cropping */
+  }
+
+  .tile {
+    width: 50%; /* Make tile slightly smaller */
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  .slider-arrow {
+    font-size: 1em; /* Smaller arrows */
+  }
+
+  .slider-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .photos {
+    max-width: 100%; /* Allow full width on very small screens */
+  }
+
+  .tile img {
+    object-fit: contain; /* Changes to contain on smaller screens to ensure no cropping */
+  }
+
+  .tile {
+    margin: 0 5px;
+  }
+}    
     
   

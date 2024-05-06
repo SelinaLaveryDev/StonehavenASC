@@ -10,7 +10,8 @@ function Sidebar() {
 			<div className="logo">
 				<img
 					src={SASC_logo1}
-					alt=""
+					alt="Stonehaven Amateur Swimming Club Logo"
+					width={250}
 				/>
 			</div>
 			<ul className="SidebarList">

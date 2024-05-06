@@ -1,11 +1,9 @@
-import ArenaGoggles from "../Assets/Photos/website-photos/ArenaGoggleResized.webp";
-import Butterfly from "../Assets/Photos/website-photos/ButterflyResized.webp";
-import ChampionshipPool from "../Assets/Photos/website-photos/ChampoinshipPoolResized.webp";
-import Flippers from "../Assets/Photos/website-photos/FlippersResized.webp";
-import FrontCrawl from "../Assets/Photos/website-photos/FrontCrawlResized.webp";
-import GreenSwimKit from "../Assets/Photos/website-photos/GreenSwimKitResized.webp";
-import JumpingInPool from "../Assets/Photos/website-photos/JumpingInPoolResized.webp";
-import JuniorAcademy from "../Assets/Photos/website-photos/JuniorAcademy.webp";
+import ArenaGoggles from "../Assets/Photos/ArenaGoggleResized 2.png";
+import Butterfly from "../Assets/Photos/ButterflyResized 2.png";
+import ChampionshipPool from "../Assets/Photos/ChampoinshipPoolResized 2.png";
+import FrontCrawl from "../Assets/Photos/FrontCrawl 4.png";
+import JumpingInPool from "../Assets/Photos/JumpingInPoolResized 2.png";
+import JuniorAcademy from "../Assets/Photos/Swimmer 2.png";
 
 export const photoData = [
 	{
@@ -25,11 +23,11 @@ export const photoData = [
 		title: "Swimming Pool",
 		img: ChampionshipPool,
 	},
-	{
-		id: 4,
-		title: "Flippers and snorkel",
-		img: Flippers,
-	},
+	// {
+	// 	id: 4,
+	// 	title: "Flippers and snorkel",
+	// 	img: Flippers,
+	// },
 
 	{
 		id: 5,
@@ -37,11 +35,11 @@ export const photoData = [
 		img: FrontCrawl,
 	},
 
-	{
-		id: 6,
-		title: "Green Swim Kit",
-		img: GreenSwimKit,
-	},
+	// {
+	// 	id: 6,
+	// 	title: "Green Swim Kit",
+	// 	img: GreenSwimKit,
+	// },
 
 	{
 		id: 7,

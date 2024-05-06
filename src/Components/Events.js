@@ -1,5 +1,8 @@
 import React from 'react';
 import './Events.css'; // Make sure to create an Events.css file for styling
+import './About.css';
+import title from "../Assets/SASCtitle 1.png";
+
 
 // const EventCard = ({ title, date, description }) => (
 //   <div className="event-card">
@@ -24,6 +27,8 @@ function Events() {
   return (
     <>
           <header className='header-block'>
+          <img src={title} alt="Welcome to Stonehaven Amateur Swimming Club" width={200}/>	
+
       </header>
 <section className="news-container">
     <div className="aqua-container">

@@ -10,11 +10,13 @@ import People from "./Components/People";
 import Documents from "./Components/Documents";
 import Events from "./Components/Events";
 import Footer from "./Components/Footer";
+import TopNav from "./Components/TopNav";
 
 export default function App() {
 	return (
 		<Router>
 			<div className="App">
+				<TopNav />
 				<Sidebar />
 				<div className="content">
 					<Routes>

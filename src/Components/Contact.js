@@ -1,6 +1,9 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Contact.css'; // Your existing CSS
+import './About.css';
+import title from "../Assets/SASCtitle 1.png";
+
 
 const Contact = () => {
   const form = useRef();
@@ -26,7 +29,9 @@ const Contact = () => {
 
   return (
     <>
-      <header className='header-block'></header>
+      <header className='header-block'>
+      <img src={title} alt="Welcome to Stonehaven Amateur Swimming Club" width={200}/>
+      </header>
       <div className="contact-container">
         <h2>Got a question? Feel free to contact us below.</h2>
         <form ref={form} onSubmit={sendEmail}>

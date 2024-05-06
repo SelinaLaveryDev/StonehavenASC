@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
 import "../Components/PhotoSlider.css";
-import ArenaGoggles from "../Assets/Photos/website-photos/ArenaGoggles.png";
-import Butterfly from "../Assets/Photos/website-photos/Butterflypng.png";
-import ChampionshipPool from "../Assets/Photos/website-photos/ChampoinshipPool.png";
-import FrontCrawl from "../Assets/Photos/website-photos/FrontCrawl.png";
-import JumpingInPool from "../Assets/Photos/website-photos/JumpingInPool.png";
-import Swimmer from "../Assets/Photos/website-photos/Swimmer.png";
+import ArenaGoggles from "../Assets/Photos/ArenaGoggleResized 2.png";
+import Butterfly from "../Assets/Photos/ButterflyResized 2.png";
+import ChampionshipPool from "../Assets/Photos/ChampoinshipPoolResized 2.png";
+import FrontCrawl from "../Assets/Photos/FrontCrawl 4.png";
+import JumpingInPool from "../Assets/Photos/JumpingInPoolResized 2.png";
+import Swimmer from "../Assets/Photos/Swimmer 2.png";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 

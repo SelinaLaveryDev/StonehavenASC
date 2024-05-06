@@ -1,20 +1,18 @@
 .home-container {
   margin: 0px;
-  height: 50%;
+  min-width: 100%;
+
 }
 
 .welcome-banner {
-  width: 100%;
-height: fit content;
-flex-shrink: 0;
+  min-width: 100%;
+height:40%;
 background: url('../Assets/Group\ 21.png') center center no-repeat;
 background-size: cover;
-display: flex;
 box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .flex-container {
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -24,14 +22,11 @@ box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .sasc-title {
-  width: 512px;
-  height: 243px;
-  margin:  100px 20px;
-flex-shrink: 0;
-background: url('../Assets/SASCfullTitle.png');
-background-repeat: no-repeat;
-background-position: center center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
 
 }
 
@@ -52,7 +47,7 @@ background-position: center center;
 }
 
 .photo-container {
-  width: 1600px;
+  width: 100%;
 }
 
 .photo-carousel {
@@ -67,4 +62,31 @@ background-position: center center;
   width: 100%;
   height: 100%;
   margin: 20px 0;
+}
+
+@media (max-width: 1400px) {
+  .sasc-title {
+    display: none;
+  }
+
+  .welcome-section h1 {
+    font-size: 1.5em;
+  }
+
+  .welcome-section p {
+    font-size: 1.2em;
+  }
+
+}
+@media (max-width: 1200px) {
+  .welcome-section h1 {
+    font-size: 1.2em;
+  }
+
+}
+@media (max-width: 900px) {
+  .home-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }

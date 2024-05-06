@@ -2,11 +2,16 @@ import React from "react";
 import "../Components/People.css"; // Ensure this CSS file is created
 import coachingChart from "../Assets/Screenshot 2024-05-05 at 16.31 1.png";
 import peopleChart from "../Assets/Screenshot 2024-05-05 at 17.24 1.png";
+import title from "../Assets/SASCtitle 1.png";
+import './About.css';
+
 
 function People() {
   return (
     <>
               <header className='header-block'>
+              <img src={title} alt="Welcome to Stonehaven Amateur Swimming Club" width={200}/>	
+
       </header>
 
     <div className="coaching-page">

@@ -5,6 +5,9 @@
   margin: auto;
   max-width: 1200px;
   padding: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
 }
 
 .about-column {
@@ -62,7 +65,15 @@ flex-basis: 100%; /* Each column takes full width on smaller screens */
   width: 100%;
   height: 200px;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+}
 
+.header-block img {
+  width: 50%;
+  object-fit: contain;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
 }
 
 .badge-container {
@@ -127,3 +138,11 @@ flex-basis: 100%; /* Each column takes full width on smaller screens */
   margin-bottom: 20px;
   border-radius: 8px; /* Rounds the corners of the image */
 }
+
+@media (max-width: 900px) {
+  .about-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
