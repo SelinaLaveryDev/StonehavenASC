@@ -24,8 +24,8 @@ body {
   background-color: #01B0F1;
 
   position: fixed;
-  top: 0; /* Adjust this value as needed, depending on your header height or desired spacing from the top */
-  overflow-y: hidden; /* To make the content scrollable if it exceeds the viewport height */
+  top: 0; 
+  overflow-y: hidden; 
 }
 
 
@@ -46,15 +46,15 @@ body {
   justify-content: center;
   align-items: center;
   color: whitesmoke;
-  text-decoration: none; /* Add this to remove default link styles */
+  text-decoration: none; 
 }
 
-.SidebarList .row a { /* Style the Link component directly */
+.SidebarList .row a { 
   height: 60px;
   width: 100%;
 
-  color: whitesmoke; /* Override default link color */
-  text-decoration: none; /* Remove underline from links */
+  color: whitesmoke; 
+  text-decoration: none; 
   display: flex;
   align-items: center;
 justify-content: center;
@@ -89,9 +89,9 @@ padding: 0 30px;
 }
 
 .content {
-  flex-grow: 1; /* takes remaining space */
-  height: 100%; /* adjust to full height of parent */
-  margin-left: 250px; /* Adjust margin to account for sidebar width */
+  flex-grow: 1; 
+  height: 100%; 
+  margin-left: 250px; 
 }
 
 @media (max-width: 900px) {
@@ -100,8 +100,8 @@ padding: 0 30px;
   overflow-x: scroll;
   }
   .Sidebar {
-    position: relative; /* Remove fixed positioning */
-    display: none; /* Hide sidebar */
+    position: relative; 
+    display: none; 
   }
 
   .small-sidebar {
@@ -116,6 +116,6 @@ padding: 0 30px;
   }
 
   .content {
-    margin-left: 0; /* Adjust margin to new sidebar width */
+    margin-left: 0; 
   }
 }

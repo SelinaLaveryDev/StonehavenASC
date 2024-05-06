@@ -114,17 +114,17 @@
   }
 
   .tile img {
-    object-fit: contain; /* Changes to contain on smaller screens to ensure no cropping */
+    object-fit: contain; 
   }
 
   .tile {
-    width: 50%; /* Make tile slightly smaller */
+    width: 50%; 
     padding: 10px;
     border-radius: 30px;
   }
 
   .slider-arrow {
-    font-size: 1em; /* Smaller arrows */
+    font-size: 1em; 
   }
 
   .slider-dot {

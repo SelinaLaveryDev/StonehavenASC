@@ -7,7 +7,7 @@
 
 .coaching-team, .head-coach-welcome {
   margin-bottom: 20px;
-  background: #f9f9f9; /* Light grey background */
+  background: #f9f9f9; 
   padding: 20px 40px;
   border-radius: 8px;
   width: fit-content;
@@ -48,19 +48,19 @@
 }
 
 .committee, .exec-committee {
-  background-color: #f0f0f0; /* Light grey background */
+  background-color: #f0f0f0; 
   padding: 10px;
   margin: 5px;
   flex: 1;
 }
 
 .committee ul, .exec-committee ul {
-  list-style-type: none; /* Removes bullet points */
+  list-style-type: none; 
   padding: 0;
 }
 
 .committee li, .exec-committee li {
-  padding: 2px 0; /* Adds vertical spacing between items */
+  padding: 2px 0; 
 }
 
 .people-chart {
