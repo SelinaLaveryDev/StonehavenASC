@@ -1,9 +1,9 @@
-import ArenaGoggles from "../Assets/Photos/ArenaGoggleResized 2.png";
-import Butterfly from "../Assets/Photos/ButterflyResized 2.png";
-import ChampionshipPool from "../Assets/Photos/ChampoinshipPoolResized 2.png";
-import FrontCrawl from "../Assets/Photos/FrontCrawl 4.png";
-import JumpingInPool from "../Assets/Photos/JumpingInPoolResized 2.png";
-import JuniorAcademy from "../Assets/Photos/Swimmer 2.png";
+import ArenaGoggles from "https://github.com/sml-40/swim-team-website-practice/blob/main/src/Assets/Photos/ArenaGoggleResized%202.png?raw=true";
+import Butterfly from "https://github.com/sml-40/swim-team-website-practice/blob/main/src/Assets/Photos/ButterflyResized%202.png?raw=true";
+import ChampionshipPool from "https://github.com/sml-40/swim-team-website-practice/blob/main/src/Assets/Photos/ChampoinshipPoolResized%202.png?raw=true";
+import FrontCrawl from "https://github.com/sml-40/swim-team-website-practice/blob/main/src/Assets/Photos/FrontCrawl%204.png?raw=true";
+import JumpingInPool from "https://github.com/sml-40/swim-team-website-practice/blob/main/src/Assets/Photos/JumpingInPoolResized%202.png?raw=true";
+import JuniorAcademy from "https://github.com/sml-40/swim-team-website-practice/blob/main/src/Assets/Photos/Swimmer%202.png?raw=true";
 
 export const photoData = [
 	{

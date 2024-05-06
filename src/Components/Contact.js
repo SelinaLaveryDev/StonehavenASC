@@ -53,6 +53,7 @@ const Contact = () => {
             id="signinButton"
             type="submit"
             style={{ backgroundColor: buttonColor, color: 'white' }}
+            setButtonColor={setButtonColor}
           >
             {buttonText}
           </button>
