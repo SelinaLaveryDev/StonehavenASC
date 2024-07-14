@@ -19,9 +19,9 @@ export default function Home() {
 			
 			<div className="welcome-section">
 				<div className="logo-row">
-				<img src={SASC_logo1} alt="Welcome to Stonehaven Amateur Swimming Club" width={200}/>	
-				<h1>Welcome to Stonehaven Amateur Swimming Club</h1>
-				<img src={aquamark} alt="Welcome to Stonehaven Amateur Swimming Club" width={100}/>
+				<img src={SASC_logo1} alt="Welcome to Stonehaven Amateur Swimming Club" width={100}/>	
+				<h1 className="welcome-title">Welcome to Stonehaven Amateur Swimming Club</h1>
+				<img className="aquamark-img" src={aquamark} alt="Welcome to Stonehaven Amateur Swimming Club" width={100}/>
 
 
 				</div>
