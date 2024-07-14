@@ -38,7 +38,7 @@ export default function About() {
             
           </div>
           <div className="screenshot-container">
-          <img src={screenshot} alt="The pathway to success isn't linear" width={400}/>
+          <img src={screenshot} alt="The pathway to success isn't linear" width={400} />
           </div>
         </section>
         

@@ -146,3 +146,7 @@ flex-basis: 100%; /* Each column takes full width on smaller screens */
   }
 }
 
+img {
+  border-radius: 20px;
+}
+
