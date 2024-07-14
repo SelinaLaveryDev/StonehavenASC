@@ -3,16 +3,18 @@ import { NavLink } from "react-router-dom";
 import "../App.css";
 import { SidebarData } from "./SidebarData";
 import SASC_logo1 from "../Assets/SASC_logo1 - Edited 1.png";
+import { Link } from 'react-router-dom';
+
 
 function Sidebar() {
 	return (
 		<div className="Sidebar">
 			<div className="logo">
-				<img
+			<Link to="/"><img
 					src={SASC_logo1}
 					alt="Stonehaven Amateur Swimming Club Logo"
 					width={250}
-				/>
+				/></Link>
 			</div>
 			<ul className="SidebarList">
 				{SidebarData.map((val, key) => {
