@@ -20,7 +20,7 @@
   padding: 10px;
   border: none;
   border-radius: 20px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3) !important; /* Ensure box-shadow is applied */
   width: 100%; /* Ensure full width */
 }
 
@@ -46,7 +46,7 @@ textarea {
 .contact-container textarea:focus {
   outline: none; /* Removes the default outline */
   border-color: #57B5C8; /* Sets the border color to a blue shade */
-  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5); /* Optional: Adds a glow effect */
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5) !important; /* Optional: Adds a glow effect */
 }
 
 .header-block {
@@ -63,6 +63,6 @@ textarea {
     margin: 0 auto 10px auto; /* Center align and add bottom margin */
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3); /* Ensure box-shadow is applied */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3) !important; /* Ensure box-shadow is applied */
   }
 }
