@@ -14,12 +14,12 @@ import TopNav from "./Components/TopNav";
 
 export default function App() {
 	return (
-		<Router basename="/StonehavenASC">
+		<Router>
 			<div className="App">
 				<TopNav />
 				<Sidebar />
 				<div className="content">
-					<Routes basename="/StonehavenASC">
+					<Routes>
 						<Route
 							exact
 							path="/"
