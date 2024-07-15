@@ -166,6 +166,9 @@ img {
   flex-basis: 100%; /* Each column takes full width on smaller screens */
   flex-direction: column;
   }
+  .badge {
+    font-size: 14px;
+  }
   
   }
   

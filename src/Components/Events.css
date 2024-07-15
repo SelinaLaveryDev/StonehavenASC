@@ -12,16 +12,17 @@
     flex-direction: column;
     align-items: center;
   }
-  
+  /*
   .event-card {
-    background: #f9f9f9; /* Light grey background */
+    background: #f9f9f9; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     margin-bottom: 20px;
-    width: 80%; /* Adjust width as necessary */
-    max-width: 500px; /* Adjust maximum width as necessary */
+    width: 80%; 
+    max-width: 500px;
   }
+  */
   
   .event-title {
     color: #333;
@@ -58,3 +59,15 @@
     width: 60%
   }
   
+  @media (max-width: 900px) {
+    .aqua-container {
+      width: 95%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .aqua-container {
+      width: 95%;
+    }
+
+  }

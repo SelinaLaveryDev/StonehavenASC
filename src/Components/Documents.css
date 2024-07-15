@@ -25,3 +25,8 @@
 .link-item:hover {
   text-decoration: underline;  
 }
+ @media (max-width: 768px) {
+  .links-container {
+    width: 90%;
+  }
+}

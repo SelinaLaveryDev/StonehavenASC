@@ -28,7 +28,8 @@ function People() {
             <li>Young Poolside Volunteers</li>
           </ul>
         </div>
-        <img src={coachingChart} alt="Coaching Team" width={400}/>
+        <div className="people-chart">
+        <img src={coachingChart} alt="Coaching Team" width={400}/></div>
       </section>
 
       <section className="head-coach-welcome">

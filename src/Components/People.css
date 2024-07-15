@@ -72,5 +72,9 @@
 @media (max-width: 768px) {
   .coaching-chart, .coaching-list, .committees-container {
     flex-direction: column;
+    flex-basis: 95%;
+  }
+  .people-chart {
+    width: 300px;
   }
 }
