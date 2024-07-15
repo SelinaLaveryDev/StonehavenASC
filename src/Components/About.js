@@ -37,8 +37,8 @@ export default function About() {
             <div className="badge platinum">Platinum</div>
             
           </div>
-          <div className="screenshot-container">
-          <img src={screenshot} alt="The pathway to success isn't linear" width={400} />
+          <div className="training-image">
+          <img className="pathway-img" src={screenshot} alt="The pathway to success isn't linear"  />
           </div>
         </section>
         
