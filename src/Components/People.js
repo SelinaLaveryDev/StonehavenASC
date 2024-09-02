@@ -42,7 +42,7 @@ function People() {
 
         <h2>COACHING TEAM VOLUNTEER OPPORTUNITIES</h2>
         <p>We are always looking for enthusiastic people to join our coaching team. If you feel that you have skills that would be suited to working with our swimmers on poolside, please contact the Head Coach to discuss.</p>
-        <a href="mailto:headcoachasc@gmail.com">headcoachasc@gmail.com</a>
+        <a href="mailto:headcoachsasc@gmail.com">headcoachsasc@gmail.com</a>
       </section>
 
       <section className="head-coach-welcome">
