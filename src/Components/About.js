@@ -83,7 +83,7 @@ Our coaching team work hard to develop relationships with other clubs throughout
 If you are looking to transfer to Stonehaven Amateur Swimming Club from another club, please contact the Membership Secretary, providing details of your swimmer’s current club, age and level, and they will discuss with the Head Coach.<br /><br />
 
 
-<a href="mailto:headcoachasc@gmail.com">sascmembershipsecretary@gmail.com</a>
+<a href="mailto:sascmembershipsecretary@gmail.com">sascmembershipsecretary@gmail.com</a>
 </p>
         </section>
 
