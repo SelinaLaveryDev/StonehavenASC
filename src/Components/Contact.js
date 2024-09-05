@@ -19,11 +19,11 @@ const Contact = () => {
           console.log(result.text);
           // Clear the form fields
           form.current.reset();
-          alert('Email sent successfully!');
+          alert('Your message is on its way to us! We will be in touch soon.');
       }, (error) => {
           console.log(error.text);
           // Optionally reset form here if desired
-          alert('Failed to send email. Please try again later.');
+          alert('Failed to send email. If this issue continues, please email sasccontactus@gmail.com');
       });
   };
 
@@ -58,6 +58,8 @@ const Contact = () => {
             {buttonText}
           </button>
         </form>
+        <h4>Or email us at <a href="mailto:sasccontactus@gmail.com">sasccontactus@gmail.com</a></h4>
+
       </div>
     </>
   );
