@@ -47,9 +47,13 @@ export default function About() {
     <div className="training-text">
     <h2>TRAINING FACILITIES</h2>
 
-      <p>Stonehaven Amateur Swimming Club’s ‘home pool’ is Stonehaven Leisure Centre, and our Gold and Platinum squads attend a weekly session at Portlethen Swimming Pool and weekly long course training at Aberdeen Sports Village.<br /><br />
-      Stonehaven Leisure Centre is currently undergoing a £1.1 million refurbishment. While this work is ongoing we have increased our sessions at Portlethen Swimming Pool, Aberdeen Sports Village and have secured pool time on loan from other local clubs, allowing us sessions at Westhill Swimming Pool and Lochside Academy.<br /><br />
-      Our Gold and Platinum swimmers are also offered monthly Yoga sessions at The Haven and regular Land Training sessions at Stonehaven Community Centre.</p>
+      <p>
+      Stonehaven Amateur Swimming Club’s ‘home pool’ is Stonehaven Leisure Centre, and our Gold and Platinum squads attend a weekly session at Portlethen Swimming Pool and weekly long course training at Aberdeen Sports Village.
+
+      <br></br><br></br>
+      Stonehaven Leisure Centre has recently undergone a significant refurbishment, including a new changing village, which has greatly enhanced the facilities for our swimmers.
+
+      <br></br><br></br>Our Gold and Platinum swimmers are also offered monthly Yoga sessions at The Haven and regular Land Training sessions.      </p>
     </div>
     <div className="training-image">
       <img src={portlethen} alt="Portlethen Swimming Pool" width={300}/>
