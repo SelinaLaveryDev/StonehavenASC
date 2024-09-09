@@ -34,6 +34,7 @@ const Contact = () => {
       </header>
       <div className="contact-container">
         <h2>Got a question? Feel free to contact us below.</h2>
+        <p>If your inquiry is not related to membership, please fill out the form below, and we'll get back to you as soon as possible.</p>
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
@@ -59,7 +60,7 @@ const Contact = () => {
           </button>
         </form>
         <h4>Or email us at <a href="mailto:sasccontactus@gmail.com">sasccontactus@gmail.com</a></h4>
-
+        <h4 style={{ fontWeight: 'bold', color: '#ff4500' }}>For membership inquiries, please contact us at <a href="mailto:sascmembershipsecretary@gmail.com">sascmembershipsecretary@gmail.com</a></h4>
       </div>
     </>
   );
