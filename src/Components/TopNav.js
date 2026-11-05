@@ -52,6 +52,11 @@ const TopNav = () => {
           </Link>
         </li>
         <li>
+          <Link to="/supporters" onClick={closeMenu}>
+            Supporters
+          </Link>
+        </li>
+        <li>
           <Link to="/links" onClick={closeMenu}>
             Links
           </Link>

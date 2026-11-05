@@ -5,6 +5,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import ArticleIcon from "@mui/icons-material/Article";
 import LanguageIcon from "@mui/icons-material/Language";
 import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
+import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 
 export const SidebarData = [
   {
@@ -30,6 +31,12 @@ export const SidebarData = [
     path: "/people",
     icon: <PeopleOutlineIcon />,
     cname: "people",
+  },
+  {
+    title: "Supporters",
+    path: "/supporters",
+    icon: <EmojiPeopleIcon />,
+    cname: "supporters",
   },
   {
     title: "Links",

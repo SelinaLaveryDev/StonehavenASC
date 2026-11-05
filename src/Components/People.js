@@ -1,4 +1,3 @@
-import React from "react";
 import "../Components/People.css";
 import coachingChart from "../Assets/Screenshot 2024-05-05 at 16.31 1.png";
 import peopleChart from "../Assets/Screenshot 2024-05-05 at 17.24 1.png";

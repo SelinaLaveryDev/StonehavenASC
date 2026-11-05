@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 import worldAquaticsLogo from "../Assets/Photos/world-aquatics.png";
 import northLogo from "../Assets/SASA North logo.jpeg";

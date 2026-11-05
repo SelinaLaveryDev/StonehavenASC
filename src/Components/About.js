@@ -1,4 +1,3 @@
-import React from "react";
 import "../Components/About.css";
 import screenshot from "../Assets/Screenshot 2024-05-05 at 15.27 1.png";
 import portlethen from "../Assets/Portlethen Swimming Pool 1.png";

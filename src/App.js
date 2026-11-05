@@ -11,49 +11,29 @@ import Documents from "./Components/Documents";
 import Events from "./Components/Events";
 import Footer from "./Components/Footer";
 import TopNav from "./Components/TopNav";
+import Supporters from "./Components/Supporters";
 
 export default function App() {
-	return (
-		<Router>
-			<div className="App">
-				<TopNav />
-				<Sidebar />
-				<div className="content">
-					<Routes>
-						<Route
-							exact
-							path="/"
-							element={<Home />}
-						/>
-						<Route
-							path="/about"
-							element={<About />}
-						/>
-						<Route
-							path="/events"
-							element={<Events />}
-						/>
+  return (
+    <Router>
+      <div className="App">
+        <TopNav />
+        <Sidebar />
+        <div className="content">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/events" element={<Events />} />
 
-						<Route
-							path="/people"
-							element={<People />}
-						/>
-						<Route
-							path="/links"
-							element={<Documents />}
-						/>
+            <Route path="/people" element={<People />} />
+            <Route path="/supporters" element={<Supporters />} />
+            <Route path="/links" element={<Documents />} />
 
-						<Route
-							path="/contact"
-							element={<Contact />}
-						/>
-
-
-					</Routes>
-				</div>
-				<Footer />
-			</div>
-
-		</Router>
-	);
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router>
+  );
 }

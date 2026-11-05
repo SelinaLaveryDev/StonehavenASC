@@ -1,13 +1,13 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import "./Contact.css"; // Your existing CSS
+import "./Contact.css";
 import "./About.css";
 import title from "../Assets/SASCtitle 1.png";
 
 const Contact = () => {
   const form = useRef();
   const [buttonText, setButtonText] = useState("Submit");
-  const [buttonColor, setButtonColor] = useState("#00BFFF"); // or any default color you prefer
+  const [buttonColor, setButtonColor] = useState("#00BFFF");
 
   const sendEmail = (e) => {
     e.preventDefault();

@@ -1,4 +1,4 @@
-import "../Components/Documents.css"; // Make sure to create a Documents.css file for styling
+import "../Components/Documents.css";
 import title from "../Assets/SASCtitle 1.png";
 import "./About.css";
 
