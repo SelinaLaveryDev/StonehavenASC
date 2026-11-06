@@ -56,11 +56,21 @@ export default function About() {
             beyond to be accepted in this squad.
           </p>
           <div className="badge-container">
-            <div className="badge junior-bronze">Junior Bronze</div>
-            <div className="badge bronze">Bronze</div>
-            <div className="badge silver">Silver</div>
-            <div className="badge gold">Gold</div>
-            <div className="badge platinum">Platinum</div>
+            <div className="badge junior-bronze">
+              <p className="squad-text">Junior Bronze</p>
+            </div>
+            <div className="badge bronze">
+              <p className="squad-text">Bronze</p>
+            </div>
+            <div className="badge silver">
+              <p className="squad-text">Silver</p>
+            </div>
+            <div className="badge gold">
+              <p className="squad-text">Gold</p>
+            </div>
+            <div className="badge platinum">
+              <p className="squad-text">Platinum</p>
+            </div>
           </div>
           <div className="training-image">
             <img

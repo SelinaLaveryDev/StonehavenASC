@@ -15,29 +15,29 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
-  background: #f9f9f9; /* Light grey background */
-  border-radius: 8px; /* Rounds the corners of the columns */
-  flex-basis: 50%; /* Takes up roughly half the container width */
+  background: #f9f9f9;
+  border-radius: 8px;
+  flex-basis: 50%;
   margin: 10px;
   padding: 20px;
 }
 
 .about-column h2,
 .about-column h3 {
-  color: #333; /* Dark text for headings */
+  color: #333;
   margin-bottom: 0.5em;
 }
 
 .about-column p,
 .about-column ul {
-  color: #555; /* Slightly lighter text for body */
-  line-height: 1.6; /* Spacing for readability */
+  color: #555;
+  line-height: 1.6;
   margin-bottom: 1em;
 }
 
 .about-column ul {
-  list-style-type: none; /* No bullets for a cleaner look /
-padding-left: 0; / Aligns text with the rest of the content */
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .about-column li {
@@ -47,91 +47,92 @@ padding-left: 0; / Aligns text with the rest of the content */
 }
 
 .about-column li::before {
-  content: "•"; /* Adds a custom bullet /
-color: #007bff; / Bullet color */
+  content: "•";
   font-size: large;
   position: absolute;
   left: 0;
 }
 
 .badge-container {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: stretch;
+  align-items: stretch;
   flex-wrap: wrap;
-
   padding: 10px;
-  border-radius: 5px;
   max-width: 100%;
   min-width: 320px;
+  gap: 8px;
 }
 
 .badge {
-  display: flex;
-  padding: 8px 16px;
-  font-size: 16px;
-  color: white;
-  border-radius: 5px;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  width: 10%;
+  display: grid;
+  border-radius: 8px;
+  place-items: center;
 }
 
 .junior-bronze {
   background-color: #6a7ba2;
-} /* Dark bluish-grey */
+}
 .bronze {
-  background-color: #6a7ba2;
-} /* Bronze */
+  background-color: #a4802b;
+}
 .silver {
-  background-color: #6a7ba2;
-} /* Silver */
+  background-color: #a8adb8;
+}
 .gold {
-  background-color: #6a7ba2;
-} /* Gold */
+  background-color: #bab723;
+}
 .platinum {
-  background-color: #6a7ba2;
-} /* Platinum grey */
+  background-color: #5e626a;
+}
+
+.squad-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: white !important;
+  text-align: center;
+}
 
 .screenshot-container {
-  flex-basis: 400px; /* Width of the image container */
+  flex-basis: 400px;
   display: flex;
-  justify-content: center; /* Center the image within its container */
-  align-items: center; /* This will vertically center the image if needed */
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
-  border-radius: 8px; /* Rounds the corners of the image */
+  border-radius: 8px;
 }
 
 .training-column {
   display: flex;
   margin: 20px;
-  background: #f9f9f9; /* Light grey background */
-  border-radius: 8px; /* Rounds the corners of the columns */
+  background: #f9f9f9;
+  border-radius: 8px;
   margin: 10px;
   padding: 20px;
 }
 
 .training-content {
   display: flex;
-  align-items: center; /* Aligns items vertically in the center */
-  justify-content: space-between; /* Spreads the content evenly */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .training-text {
-  flex: 1; /* Takes up remaining space not used by the image */
-  padding-right: 20px; /* Adds some space between the text and the image */
+  flex: 1;
+  padding-right: 20px;
 }
 
 .training-image {
-  flex-basis: 400px; /* Width of the image container */
+  flex-basis: 400px;
   display: flex;
-  justify-content: center; /* Center the image within its container */
-  align-items: center; /* This will vertically center the image if needed */
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
-  border-radius: 8px; /* Rounds the corners of the image */
+  border-radius: 8px;
 }
-
-/* Responsive adjustments */
 
 @media (max-width: 900px) {
   .about-container {
@@ -139,7 +140,7 @@ color: #007bff; / Bullet color */
   }
 
   .training-content {
-    flex-basis: 100%; /* Each column takes full width on smaller screens */
+    flex-basis: 100%;
     flex-direction: column;
   }
 }
@@ -150,10 +151,10 @@ img {
 
 @media (max-width: 768px) {
   .about-column {
-    flex-basis: 100%; /* Each column takes full width on smaller screens */
+    flex-basis: 100%;
   }
   .training-content {
-    flex-basis: 100%; /* Each column takes full width on smaller screens */
+    flex-basis: 100%;
     flex-direction: column;
   }
   .badge {

@@ -1,11 +1,12 @@
 a {
   cursor: pointer;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
+  color: blue;
 }
 
 a:visited {
-  color: black;
+  color: blue;
 }
 
 .home-container {
