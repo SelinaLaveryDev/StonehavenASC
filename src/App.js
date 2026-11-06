@@ -1,4 +1,4 @@
-import { Router, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./Components/Sidebar";
 import Home from "./Components/Home";
@@ -22,7 +22,7 @@ export default function App() {
       <TopNav />
       <Sidebar />
       <SiteHeader />
-      <div className={isHomePage ? "content content--Home" : "content"}>
+      <div className={isHomePage ? "content content--home" : "content"}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
