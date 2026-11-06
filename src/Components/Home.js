@@ -1,5 +1,3 @@
-import SASC_logo1 from "../Assets/SASC_logo1 - Edited 1.png";
-import title from "../Assets/SASCtitle 1.png";
 import aquamark from "../Assets/Copy of SSW_AQM1_Pos_Logo.png";
 import "../Components/Home.css";
 import PhotoSlider from "./PhotoSlider";
@@ -9,24 +7,12 @@ export default function Home() {
     <div className="home-container">
       <div className="welcome-banner">
         <div className="flex-container">
-          <div className="sasc-title">
-            <img
-              src={title}
-              alt="Welcome to Stonehaven Amateur Swimming Club"
-              width={400}
-            />
-          </div>
           <PhotoSlider />
         </div>
       </div>
 
       <div className="welcome-section">
         <div className="logo-row">
-          <img
-            src={SASC_logo1}
-            alt="Welcome to Stonehaven Amateur Swimming Club"
-            width={100}
-          />
           <h1 className="welcome-title">
             Welcome to Stonehaven Amateur Swimming Club
           </h1>

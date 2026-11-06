@@ -1,6 +1,4 @@
 import "../Components/Documents.css";
-import title from "../Assets/SASCtitle 1.png";
-import "./About.css";
 
 const Documents = () => {
   const links = {
@@ -50,13 +48,6 @@ const Documents = () => {
   };
   return (
     <>
-      <header className="header-block">
-        <img
-          src={title}
-          alt="Welcome to Stonehaven Amateur Swimming Club"
-          width={200}
-        />
-      </header>
       <div className="links">
         <div className="links-container">
           <h2>Links</h2>

@@ -22,53 +22,36 @@
   padding: 20px;
 }
 
-.about-column h2, .about-column h3 {
+.about-column h2,
+.about-column h3 {
   color: #333; /* Dark text for headings */
   margin-bottom: 0.5em;
 }
 
-.about-column p, .about-column ul {
+.about-column p,
+.about-column ul {
   color: #555; /* Slightly lighter text for body */
-  line-height:1.6; /* Spacing for readability */
-margin-bottom: 1em;
+  line-height: 1.6; /* Spacing for readability */
+  margin-bottom: 1em;
 }
 
 .about-column ul {
-list-style-type: none; /* No bullets for a cleaner look /
+  list-style-type: none; /* No bullets for a cleaner look /
 padding-left: 0; / Aligns text with the rest of the content */
 }
 
 .about-column li {
-margin-bottom: 0.5em;
-padding-left: 1.5em;
-position: relative;
+  margin-bottom: 0.5em;
+  padding-left: 1.5em;
+  position: relative;
 }
 
 .about-column li::before {
-content: '•'; /* Adds a custom bullet /
+  content: "•"; /* Adds a custom bullet /
 color: #007bff; / Bullet color */
-font-size: large;
-position: absolute;
-left: 0;
-}
-
-/* Add additional styles for buttons, links, and other elements as needed. */
-
-.header-block {
-  background: url('../Assets/Group\ 21.png') center center no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
-  display: flex;
-}
-
-.header-block img {
-  width: 400px;
-  object-fit: contain;
-  border-radius: 15px;
-  display: block;
-  margin: 20px auto;
+  font-size: large;
+  position: absolute;
+  left: 0;
 }
 
 .badge-container {
@@ -94,11 +77,21 @@ left: 0;
   width: 10%;
 }
 
-.junior-bronze { background-color: #6a7ba2; } /* Dark bluish-grey */
-.bronze       { background-color: #6a7ba2; } /* Bronze */
-.silver       { background-color: #6a7ba2; } /* Silver */
-.gold         { background-color: #6a7ba2; } /* Gold */
-.platinum     { background-color: #6a7ba2; } /* Platinum grey */
+.junior-bronze {
+  background-color: #6a7ba2;
+} /* Dark bluish-grey */
+.bronze {
+  background-color: #6a7ba2;
+} /* Bronze */
+.silver {
+  background-color: #6a7ba2;
+} /* Silver */
+.gold {
+  background-color: #6a7ba2;
+} /* Gold */
+.platinum {
+  background-color: #6a7ba2;
+} /* Platinum grey */
 
 .screenshot-container {
   flex-basis: 400px; /* Width of the image container */
@@ -116,7 +109,6 @@ left: 0;
   border-radius: 8px; /* Rounds the corners of the columns */
   margin: 10px;
   padding: 20px;
-
 }
 
 .training-content {
@@ -139,7 +131,6 @@ left: 0;
   border-radius: 8px; /* Rounds the corners of the image */
 }
 
-
 /* Responsive adjustments */
 
 @media (max-width: 900px) {
@@ -150,8 +141,7 @@ left: 0;
   .training-content {
     flex-basis: 100%; /* Each column takes full width on smaller screens */
     flex-direction: column;
-    }
-    
+  }
 }
 
 img {
@@ -160,16 +150,13 @@ img {
 
 @media (max-width: 768px) {
   .about-column {
-  flex-basis: 100%; /* Each column takes full width on smaller screens */
+    flex-basis: 100%; /* Each column takes full width on smaller screens */
   }
   .training-content {
-  flex-basis: 100%; /* Each column takes full width on smaller screens */
-  flex-direction: column;
+    flex-basis: 100%; /* Each column takes full width on smaller screens */
+    flex-direction: column;
   }
   .badge {
     font-size: 14px;
   }
-  
-  }
-  
-
+}

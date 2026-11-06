@@ -86,8 +86,12 @@ body {
 
 .content {
   flex-grow: 1;
-  height: 100%;
+  margin-top: (--header-height);
   margin-left: 250px;
+}
+
+.content--home {
+  margin-top: 0;
 }
 
 @media (max-width: 900px) {

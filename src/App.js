@@ -1,5 +1,5 @@
+import { Router, Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./Components/Sidebar";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -12,28 +12,30 @@ import Events from "./Components/Events";
 import Footer from "./Components/Footer";
 import TopNav from "./Components/TopNav";
 import Supporters from "./Components/Supporters";
+import { SiteHeader } from "./Components/SiteHeader";
 
 export default function App() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   return (
-    <Router>
-      <div className="App">
-        <TopNav />
-        <Sidebar />
-        <div className="content">
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/events" element={<Events />} />
+    <div className="App">
+      <TopNav />
+      <Sidebar />
+      <SiteHeader />
+      <div className={isHomePage ? "content content--Home" : "content"}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
 
-            <Route path="/people" element={<People />} />
-            <Route path="/supporters" element={<Supporters />} />
-            <Route path="/links" element={<Documents />} />
+          <Route path="/people" element={<People />} />
+          <Route path="/supporters" element={<Supporters />} />
+          <Route path="/links" element={<Documents />} />
 
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
-        <Footer />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
-    </Router>
+      <Footer />
+    </div>
   );
 }

@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  width: 100vw;
+}
+
+.header-block {
+  background: url("../Assets/Group\ 21.png") center center no-repeat;
+  background-size: fill;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  align-content: center;
+  width: calc(100vw - 249px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-block img {
+  width: 400px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+@media (max-width: 900px) {
+  .header-block {
+    width: 100%;
+  }
+}

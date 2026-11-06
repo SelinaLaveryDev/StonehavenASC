@@ -1,17 +1,8 @@
 import "./Events.css";
-import "./About.css";
-import title from "../Assets/SASCtitle 1.png";
 
 function Events() {
   return (
     <>
-      <header className="header-block">
-        <img
-          src={title}
-          alt="Welcome to Stonehaven Amateur Swimming Club"
-          width={200}
-        />
-      </header>
       <section className="news-container">
         <div className="aqua-container">
           <h2>AQUAMARK</h2>
