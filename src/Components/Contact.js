@@ -1,75 +1,61 @@
-import { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import { useState } from "react";
 import "./Contact.css";
 import "./About.css";
 
-const Contact = () => {
-  const form = useRef();
-  const [buttonText, setButtonText] = useState("Submit");
-  const [buttonColor, setButtonColor] = useState("#00BFFF");
+const contacts = [
+  {
+    title: "General enquiries",
+    description:
+      "Questions about the club, training or anything that isn't membership.",
+    email: "sasccontactus@gmail.com",
+  },
+  {
+    title: "Membership",
+    description: "Joining the club or questions about your membership.",
+    email: "sascmembershipsecretary@gmail.com",
+  },
+];
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    setButtonText("Sending...");
+const ContactCard = ({ title, description, email }) => {
+  const [copied, setCopied] = useState(false);
 
-    emailjs
-      .sendForm(
-        "service_or3n458",
-        "template_mqz0i1r",
-        form.current,
-        "aq6obCjDFMCjHRdT4",
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          // Clear the form fields
-          form.current.reset();
-          alert("Your message is on its way to us! We will be in touch soon.");
-        },
-        (error) => {
-          console.log(error.text);
-          // Optionally reset form here if desired
-          alert(
-            "Failed to send email. If this issue continues, please email sasccontactus@gmail.com",
-          );
-        },
-      );
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Clipboard not available: the address is still on screen to copy by hand
+    }
   };
 
   return (
-    <>
-      <div className="contact-container">
-        <h2>Got a question? Feel free to contact us below.</h2>
-        <p>
-          If your enquiry is not related to membership, please fill out the form
-          below, and we'll get back to you as soon as possible.
-        </p>
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="from_name" placeholder="Enter your Name" />
-          <input type="email" name="from_email" placeholder="Your Email" />
-          <textarea name="message" placeholder="Enter your message"></textarea>
-          <button
-            id="signinButton"
-            type="submit"
-            style={{ backgroundColor: buttonColor, color: "white" }}
-            setButtonColor={setButtonColor}
-          >
-            {buttonText}
-          </button>
-        </form>
-        <h4>
-          Or email us at{" "}
-          <a href="mailto:sasccontactus@gmail.com">sasccontactus@gmail.com</a>
-        </h4>
-        <h4 style={{ fontWeight: "bold", color: "#ff4500" }}>
-          For membership enquiries, please contact us at{" "}
-          <a href="mailto:sascmembershipsecretary@gmail.com">
-            sascmembershipsecretary@gmail.com
-          </a>
-        </h4>
-      </div>
-    </>
+    <div className="contact-card">
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <a href={`mailto:${email}`} className="contact-email">
+        {email}
+      </a>
+      <button type="button" className="copy-button" onClick={copyEmail}>
+        {copied ? "Copied!" : "Copy email address"}
+      </button>
+    </div>
   );
 };
+
+const Contact = () => (
+  <div className="contact-container">
+    <h2>Got a question? Get in touch.</h2>
+    <p className="contact-intro">
+      Choose the right address below and we'll get back to you as soon as we
+      can.
+    </p>
+    <div className="contact-cards">
+      {contacts.map((contact) => (
+        <ContactCard key={contact.email} {...contact} />
+      ))}
+    </div>
+  </div>
+);
 
 export default Contact;
