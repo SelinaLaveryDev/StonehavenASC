@@ -6,7 +6,7 @@ const contacts = [
   {
     title: "General enquiries",
     description:
-      "Questions about the club, training or anything that isn't membership.",
+      "Get in touch with any questions about the club or our training sessions.",
     email: "sasccontactus@gmail.com",
   },
   {
@@ -24,9 +24,7 @@ const ContactCard = ({ title, description, email }) => {
       await navigator.clipboard.writeText(email);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // Clipboard not available: the address is still on screen to copy by hand
-    }
+    } catch {}
   };
 
   return (
